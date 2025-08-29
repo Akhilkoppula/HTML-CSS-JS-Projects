@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.container {
+    position: relative;
+    background: #222;
+    height: 500px;
+    width: 800px;
+    
+}
+
+.clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.clip1 {
+    background: url(https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 46% 0, 39% 100%, 0% 100%);
+}
+.clip2 {
+    background: url(https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(19% 0, 87% 0, 64% 100%,33% 100%);
+}
+.clip3 {
+    background: url(https://images.pexels.com/photos/158063/bellingrath-gardens-alabama-landscape-scenic-158063.jpeg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(82% 0, 100% 0, 100% 100%, 63% 100%);
+}
+.container:hover.clip{
+    clip-path:polygon(100% 0%,100% 0%,100% 100%, 100% 100%);
+}
+.container.clip:hover  {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}

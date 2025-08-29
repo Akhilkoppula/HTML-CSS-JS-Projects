@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.name{
+    font-size:200;
+    font-weight: 900;
+    background: url(https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg);
+    background-size:contain;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
