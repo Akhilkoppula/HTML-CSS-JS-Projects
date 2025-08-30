@@ -1,2 +1,2 @@
 # HTML-CSS-JS-Projects
-This repository consists some of my basic playful HTML,CSS and JS projects 
+This repository consists some of my cool and playful HTML,CSS and JS projects 
