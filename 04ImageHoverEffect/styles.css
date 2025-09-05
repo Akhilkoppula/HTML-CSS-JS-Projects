@@ -25,6 +25,7 @@ body {
     height: 100%;
     width: 100%;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .clip1 {
@@ -51,3 +52,4 @@ body {
 .container.clip:hover  {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
+
