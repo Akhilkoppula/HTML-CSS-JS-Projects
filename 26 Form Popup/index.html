@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Form Popup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="content-container">
+            <h1>Welcome to The Real World</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti ab itaque nam magnam obcaecati qui possimus commodi maiores corporis non assumenda iusto officia ipsum atque beatae ut, ipsa, facere, laudantium consectetur accusamus quas dolore sed.</p>
+             <button class="cta-btn" id="open">Sign Up</button>
+        </div>
+       
+    </header>
+
+    <section class="modalContainer" id="modal">
+        <section class="modal">
+            <button class="close-btn" id="close">X</button>
+            <div class="modalContent">
+                <h1>Sign Up</h1>
+                <form  class="modal-form">
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter name" class="form-input">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Enter Email" class="form-input">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="text" id="password" placeholder="Enter password" class="form-input">
+                    </div>
+                    <div>
+                        <label for="Confirmpassword">Confirm-Password</label>
+                        <input type="text" id="Confirmpassword" placeholder="Enter Confirm password" class="form-input">
+                    </div>
+                   <input type="submit" value="Submit" class="submit-btn">
+                    
+                </form>
+            </div>
+        </section>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+:root{
+    --modal-duration:1s;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    transition: transform 0.3s ease;
+}
+
+header{
+    background: url("https://images.unsplash.com/photo-1622071332509-a3fbb71b2007?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.content-container h1{
+    font-size: 4rem;
+    color: rgb(122, 123, 150);
+}
+.content-container p{
+    width: 600px;
+    text-align: center;
+    line-height: 24px;
+    margin: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.cta-btn{
+    padding: 12px 30px;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    background-color: rgb(239, 239, 17);
+    cursor: pointer;
+}
+.cta-btn:active{
+    transform: scale(0.98);
+}
+
+.modalContainer{
+display:none;
+background:rgba(0, 0, 0, 0.6);
+position: fixed;
+top: 0;
+left: 0;
+right:0;
+bottom: 0;
+}
+.modal{
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position:absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 100%;
+    width: 400px;
+}
+.close-btn{
+    position: absolute;
+    top: 5px;
+    right:10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    color: crimson;
+}
+.modalContent{
+    padding: 30px;
+}
+.modal-form div{
+    margin: 20px 0;
+}
+.modal-form label{
+    display: block;
+    margin: 6px;
+}
+.modal-form .form-input{
+    padding: 8px;
+    width: 100%;
+}
+
+.modal-form .submit-btn{
+    padding: 10px 30px;
+    background-color: rgb(239, 239, 17);
+    border: none;
+    outline: none;
+    cursor:pointer;
+
+}
+
+/* JS */
+.modalContainer.show-modal{
+    display:block;
+}
